@@ -29,4 +29,16 @@ const readingList = [['Surprise throwbacks are bound to bring unexpected feeling
    'You\'re feeling the urge to put on a show for someone -- maybe you\'re telling jokes nonstop, maybe you\'re popping and locking on the dance floor, or maybe it\'s something much more private.']];
 
 const horoscopeGen =  {
+    _themes: themeList,
+   _signs: signList,
+   _readings: readingList,
+   getReading() {
+      let str = '';
+      let themeNum = Math.floor( Math.random() * themeList.length );
+      let signNum = Math.floor( Math.random() * signList.length );
+      let readingNum = Math.floor( Math.random() * this._readings[themeNum].length );
+
+      return 'Theme: ' + this._themes[themeNum] + '\nYour sign: ' + this._signs[signNum] + 
+         '\nYour reading: ' + readingList[themeNum][readingNum];
+   }
 };
