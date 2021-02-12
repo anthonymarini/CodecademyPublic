@@ -42,3 +42,5 @@ const horoscopeGen =  {
          '\nYour reading: ' + readingList[themeNum][readingNum];
    }
 };
+
+console.log( horoscopeGen.getReading() );
