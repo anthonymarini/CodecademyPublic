@@ -5,13 +5,6 @@
    parts: the theme, the sign, and the reading itself
 */
 
-/* Horoscope Generator (part of Codecademy's full stack training)
-   Author: Anthony Marini
-   
-   The goal is to generate random astrology readings composed of three different
-   parts: the theme, the sign, and the reading itself
-*/
-
 const themeList = ['Love', 'Work', 'Dating'];
 const signList = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 
    'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
