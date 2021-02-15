@@ -26,7 +26,6 @@ const horoscopeGen =  {
    _signs: signList, // All zodiac signs
    _readings: readingList, // A matrix of different readings
    getReading() {
-      let str = '';
       let themeNum = randomNum( themeList.length );
       let signNum = randomNum( signList.length );
       let readingNum = randomNum( this._readings[themeNum].length );
