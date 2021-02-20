@@ -9,6 +9,12 @@ body {
     margin: 10px 10%;
 }
 
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
 section {
     border: 1px dotted black;
     padding: 10px 0;
@@ -19,9 +25,6 @@ section {
 h1 {
     font-size: 40px;
     font-weight: bold;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
 }
 
 h2 {
@@ -37,6 +40,16 @@ h3 {
 
 p {
     font-size: 16px;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 10px 0px 20px 0px;
+}
+
+ul > li {
+    margin-left: 5px;
 }
 
 /* Color section */
@@ -56,6 +69,7 @@ p {
     display: inline-block;
     margin: 10px;
     padding: 10px;
+    vertical-align: top;
 }
 
 #colors .red {
@@ -90,6 +104,7 @@ p {
     text-align: left;
     margin: 1%;
     padding: 0px;
+    vertical-align: top;
 }
 
 .barlow {
@@ -114,6 +129,14 @@ p {
 
 .bold {
     font-weight: bold;
+}
+
+#text-styles {
+    padding: 2%;
+}
+
+#text-styles h2:first-child {
+    text-align: center;
 }
 
 /* ---------------- EXTRA FUN ------------------- */
