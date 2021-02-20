@@ -1,6 +1,6 @@
 /* General styles */
 * {
-   /* box-sizing: border-box;*/
+   box-sizing: border-box;
 }
 
 /* Structural styles */
@@ -11,12 +11,13 @@ body {
 
 section {
     border: 1px dotted black;
-    padding: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
 /* General text styles */
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -24,9 +25,14 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 30px;
     color: darkred;
     font-weight: bold;
+}
+
+h3 {
+    font-size: 23px;
+    text-decoration: underline;
 }
 
 p {
@@ -72,6 +78,44 @@ p {
     color: white;
 }
 
+/* Fonts section */
+#fonts {
+    text-align: center;
+}
+
+#fonts .font-box {
+    width: 47%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: left;
+    margin: 1%;
+    padding: 0px;
+}
+
+.barlow {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.montserrat {
+    font-family: Montserrat, sans-serif;
+}
+
+.overpass {
+    font-family: Overpass, sans-serif;
+}
+
+.ubuntu {
+    font-family: Ubuntu, sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 /* ---------------- EXTRA FUN ------------------- */
 
 /* Dropbox code */
@@ -84,8 +128,10 @@ p {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    color: black;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid gray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     padding: 12px 16px;
     z-index: 1;
 }
