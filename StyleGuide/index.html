@@ -14,6 +14,14 @@
         </header>
         <section id="colors">
             <h2>Colors</h2>
+            <form name="colorForm">
+                <input type="radio" id="hex" name="colorRadios" value="hex" checked onclick="changeColorSyntax()" />
+                <label for="hex">Hex</label>
+                <input type="radio" id="rgb" name="colorRadios" value="rgb" onclick="changeColorSyntax()" />
+                <label for="rgb">RGB</label>
+                <input type="radio" id="hsl" name="colorRadios" value="hsl" onclick="changeColorSyntax()" />
+                <label for="hsl">HSL</label>
+             </form>
             <div class="swatch red dropdown">
                 <p class="name">Red</p>
                 <p class="value hex">#FF0000</p>

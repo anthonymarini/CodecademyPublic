@@ -1,21 +1,43 @@
-const LOG = true;
+const LOG = false;
+let prev = null;
+
+function changeColorSyntax() {
+    let val = document.querySelector("input[name=colorRadios]:checked").value;
+    if ( prev !== val ) {
+        log( val + " was chosen." );
+        let changeVals = [];
+        let otherVals = [];
+        switch( val ) {
+            case "hex":
+                changeVals = document.getElementsByClassName("value hex");
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value rgb" ) );
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value hsl" ) );
+                break;
+            case "rgb":
+                changeVals = document.getElementsByClassName("value rgb");
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value hex" ) );
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value hsl" ) );
+                break;
+            case "hsl":
+                changeVals = document.getElementsByClassName("value hsl");
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value hex" ) );
+                otherVals.push.apply( otherVals, document.getElementsByClassName("value rgb" ) );
+                break;
+            default: 
+                log( "ERROR" );
+                break;
+        }
+
+        for ( let i=0; i<changeVals.length; i++ )
+            changeVals[i].style.display = "block";
+        for ( let j=0; j<otherVals.length; j++ )
+            otherVals[j].style.display = "none";
+        prev = val;
+    }
+}
 
 function log( msg ) {
     if ( LOG ) {
         console.log( msg );
-    }
-}
-
-function changeColorValue( num ) {
-    log( "Number " + num + " was chosen." );
-    switch( num ) {
-        case 0: 
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        default: 
-            break;
     }
 }
