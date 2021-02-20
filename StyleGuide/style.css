@@ -1,0 +1,95 @@
+/* General styles */
+* {
+   /* box-sizing: border-box;*/
+}
+
+/* Structural styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 10%;
+}
+
+section {
+    border: 1px dotted black;
+    padding: 10px;
+}
+
+/* General text styles */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: darkred;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Color section */
+.rgb, .hsl {
+    display: none;
+}
+
+#colors {
+    text-align: center;
+}
+
+#colors .swatch {
+    width: 25%;
+    min-height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+#colors .red {
+    background-color: red;
+    color: white;
+}
+
+#colors .purple {
+    background-color: purple;
+    color: white;
+}
+
+#colors .green {
+    background-color: green;
+    color: white;
+}
+
+#colors .black {
+    background-color: black;
+    color: white;
+}
+
+/* ---------------- EXTRA FUN ------------------- */
+
+/* Dropbox code */
+#colors .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+#colors .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#colors .dropdown:hover .dropdown-content {
+    display: block;
+}
